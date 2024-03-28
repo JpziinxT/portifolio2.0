@@ -1,0 +1,52 @@
+#habilidades {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 50px;
+    background-color: var(--color-bg);
+}
+
+.title-skill h2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+}
+
+.title-skill h2::after {
+    content: "";
+    display: flex;
+    position: relative;
+    right: 3px;
+    background-color: var(--color-primary);
+    width: 9.4rem;
+    height: 2px;
+}
+
+.text-skill {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-skill h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.text-skill p {
+    color: var(--color-font);
+    font-size: 15px;
+    width: 120vh;
+}
+
+.img-content {
+    padding: 30px 35px;
+    display: flex;
+    gap: 30px;
+}
+
+.img-content img {
+    width: 80px;
+}

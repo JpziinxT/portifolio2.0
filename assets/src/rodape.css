@@ -1,0 +1,44 @@
+#rodape {    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40rem;
+    padding: 30px 50px;
+    color: var(--color-font);
+
+    font-family: 'poppins';
+}
+
+
+.copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.copy p {
+    display: flex;
+}
+
+.copy p::after {
+    content: '';
+    display: flex;
+    position: relative;
+    width: 6rem;
+    top: 35px;
+    left: 21rem;
+    rotate: 90deg;
+    height: 1px;
+    background-color: var(--color-font);
+}
+
+.social {
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+
+.social a, i {
+    color: white;
+    text-decoration: none;
+    padding: 5px 8px;
+}
