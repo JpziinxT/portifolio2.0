@@ -1,43 +1,43 @@
 #header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     background-color: var(--color-bg);
     padding: 15px 50px;
+}
+
+#menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo-container img {
     width: 65px;
 }
 
-#menu-container {
+.nav-list ul {
     display: flex;
     gap: 60px;
+    list-style: none;
 }
 
-#menu-container a {
+.nav-list a, li {
     text-decoration: none;
     font-size: 18px;
     color: var(--color-primary);
     transition: .3s;
 }
 
-#menu-container a:hover {
+#menu-container li:hover {
     scale: 1.2;
 }
 
-.btn-container {
-    border: none;
-    background-color: transparent;
-}
-
-.btn-container  {
+.btn-contact button {
     display: flex;
     justify-content: center;
     align-items: center;
     transition: .3s;
     width: 7rem;
+    border: none;
     height: 2.5rem;
     font-size: 17px;
     font-weight: 400;
@@ -47,9 +47,75 @@
     background-color: var(--color-primary);
 }
 
-.btn-container:hover {
-    background-color: transparent;
-    border: 3px solid ;
+.btn-contact a {
+    color: var(--color-bg);
+    text-decoration: none;
+}
+
+.btn-contact button:hover {
     scale: 1.1;
-    color: var(--color-primary);
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    #header-container {
+        padding: 20px 0 15px 15px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .btn-contact {
+        display: none;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        border: none;
+        background-color: transparent;
+        font-size: 50px;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .btn-contact {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .btn-contact button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
 }

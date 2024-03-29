@@ -15,6 +15,11 @@ body {
     
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
 :root {
     --color-primary: #ffb200;
     --color-bg: #131417;

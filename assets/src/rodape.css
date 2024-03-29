@@ -24,9 +24,9 @@
     content: '';
     display: flex;
     position: relative;
-    width: 6rem;
+    width: 12vh;
     top: 35px;
-    left: 21rem;
+    left: 23rem;
     rotate: 90deg;
     height: 1px;
     background-color: var(--color-font);

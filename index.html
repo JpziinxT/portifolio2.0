@@ -16,16 +16,38 @@
 <body>
     <!-- CABEÇALHO -->
     <header id="header-container">
-        <div class="logo-container">
-            <img src="./images/LogoJp.jpg" alt="jplogo">
-        </div>
         <nav id="menu-container">
-            <a href="#header-container">Inicio</a>
-            <a href="#projects">Projetos</a>
-            <a href="#about">Sobre mim</a>
-            <a href="#habilidades">Experiência</a>
+            <div class="logo-container">
+                <img src="./images/LogoJp.jpg" alt="jplogo">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="#header-container">Inicio</a></li>
+                    <li><a href="#about">Sobre mim</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#habilidades">Experiência</a></li>
+                </ul>
+            </div>
+            <div class="btn-contact">
+                <button><a href="./contact.html" class="btn-container">Contato</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow"><i class="bx bx-menu" style="color: #ffb200;"></i></button>
+            </div>
         </nav>
-        <a href="./contact.html" class="btn-container">Contato</a>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#header-container">Inicio</a></li>
+                <li class="nav-item"><a href="#about">Sobre mim</a></li>
+                <li class="nav-item"><a href="#projects">Projetos</a></li>
+                <li class="nav-item"><a href="#habilidades">Experiência</a></li>
+            </ul>
+
+            <div class="btn-contact">
+                <button><a href="./contact.html" class="btn-container">Contato</a></button>
+            </div>
+        </div>
     </header>
 
     <!-- APRESENTAÇÃO INICIO -->
@@ -123,5 +145,7 @@
             <a href="https://www.youtube.com/channel/UC9qawccg2Cz7sVjWb-q8vhQ" target="_blank"><i class="bx bxl-youtube"></i>Youtube</a>
         </div>
     </footer>
+
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
