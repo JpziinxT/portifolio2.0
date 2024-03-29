@@ -38,6 +38,7 @@
     position: relative;
     transition: .3s;
     width: 9rem;
+    gap: 4px;
     top: 40px;
     font-size: 17px;
     padding: 8px 20px;
