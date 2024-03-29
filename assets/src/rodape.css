@@ -1,44 +1,29 @@
 #rodape {    
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 40rem;
+    flex-direction: column;
+    justify-content: center;
     padding: 30px 50px;
     color: var(--color-font);
 
     font-family: 'poppins';
 }
 
-
-.copy {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.copy p {
-    display: flex;
-}
-
-.copy p::after {
-    content: '';
-    display: flex;
-    position: relative;
-    width: 12vh;
-    top: 35px;
-    left: 23rem;
-    rotate: 90deg;
-    height: 1px;
-    background-color: var(--color-font);
-}
-
 .social {
-    display: grid;
-    grid-template-columns: 200px 200px;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    gap: 10px;
 }
 
-.social a, i {
-    color: white;
-    text-decoration: none;
-    padding: 5px 8px;
+.social a {
+    color: var(--color-font);
+    font-size: 25px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    
 }

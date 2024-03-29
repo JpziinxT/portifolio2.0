@@ -28,8 +28,7 @@
 }
 
 .h2 {
-    position: relative;
-    top: -18px;
+    margin-top: -18px;
 }
 
 .btn-content {
@@ -50,4 +49,26 @@
 
 .btn-content:hover {
     scale: 1.1;
+}
+
+@media  screen and (max-width: 768px) {
+    #main-content img {
+        display: none;
+    }
+
+    #main-content {
+        padding: 100px 20px 220px;
+    }
+
+    .text-content h1 {
+        font-size: 58px;
+    }
+
+    .text-content h2 {
+        font-size: 30px;
+    }
+
+    .h2 {
+        margin-top: -10px;
+    }
 }

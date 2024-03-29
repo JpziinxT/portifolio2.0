@@ -79,3 +79,75 @@
     border-radius: 5px;
 }
 
+@media screen and (max-width: 768px) {
+    #about {
+        padding: 30px 20px;
+        height: 55vh;
+    }
+
+    .text-about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bio-about {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .bio-about img {
+        height: 140px;
+        border-radius: 5px;
+        float: none;
+    }
+
+    .pt-br {
+        position: relative;
+        top: 0;
+        display: flex;
+        gap: 8px;
+    }
+
+    .pt-br img {
+        width: 50px;
+        height: 35px;
+        border-radius: 4px;
+    }
+
+    .text-br h3 {
+        font-size: 13px;
+        color: white;
+    }
+    
+    .text-br p {
+        text-align: start;
+        margin: 0;
+        margin-top: -3px;
+        font-size: 11px;
+    }
+
+    .eng {
+        position: relative;
+        top: 5px;
+        display: flex;
+        gap: 8px;
+    }
+
+    .eng img {
+        width: 50px;
+        height: 33px;
+        border-radius: 4px;
+    }
+
+    .title-about h2 {
+        padding: 0;
+    }
+
+    .bio-about p {
+        text-align: justify;
+        margin: 0 0 0 10px;
+        font-size: 10px;
+        position: relative;
+    }
+}
