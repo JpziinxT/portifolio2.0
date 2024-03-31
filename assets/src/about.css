@@ -79,6 +79,12 @@
     border-radius: 5px;
 }
 
+.flags {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
 @media screen and (max-width: 768px) {
     #about {
         padding: 30px 20px;
